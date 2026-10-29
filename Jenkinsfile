@@ -16,7 +16,7 @@ pipeline {
             steps {
                 sh '''
                     echo "Checking required project files..."
-                    test -f FILE-DOES-NOT-EXIST.txt
+                    test -f README.md
                     test -f Jenkinsfile
                     echo "Validation successful."
                 '''
